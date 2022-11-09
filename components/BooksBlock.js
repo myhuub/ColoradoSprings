@@ -28,28 +28,28 @@ export default function BooksBlock(props){
         Linking.openURL(URL)
     }
     return (
-        <View style={{ flexDirection: 'row' }}>
-        <View style={{ width: '25%' }}>
-          <TouchableOpacity onPress={()=> openURL('https://coloradosprings.myhuub.com/grants/')}>
-            <Image style={{ width: 70, height: 70, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/Grants2003.png' }} />
-          </TouchableOpacity>
-        </View>
-        <View style={{ width: '25%' }}>
-          <TouchableOpacity onPress={()=> openURL('https://coloradosprings.myhuub.com/events/')}>
-            <Image style={{ width: 70, height: 70, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/events200.png' }} />
-          </TouchableOpacity>
-        </View>
-        <View style={{ width: '25%' }}>
-          <TouchableOpacity onPress={()=> openURL('https://coloradosprings.myhuub.com/bbapp/screen/courses_all')}>
-            <Image style={{ width: 70, height: 70, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/courses200.png' }} />
-          </TouchableOpacity>
-        </View>
-        <View style={{ width: '25%' }}>
-          <TouchableOpacity onPress={()=> openURL('https://coloradosprings.myhuub.com/coloradospringsadvisors/')}>
-            <Image style={{ width: 70, height: 70, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/advisor200.png' }} />
-          </TouchableOpacity>
-        </View>
+      <View style={{ flexDirection: 'row', padding: 20, paddingRight: 10, paddingLeft: 10 }}>
+      <View style={{ width: '25%', justifyContent:'center',  }}>
+        <TouchableOpacity onPress={() => openURL('https://coloradosprings.myhuub.com/grants/')}>
+          <Image style={{ width: 110, height: 110, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/Grants2003.png' }} />
+        </TouchableOpacity>
       </View>
+      <View style={{ width: '25%', justifyContent:'center',  }}>
+        <TouchableOpacity onPress={() => openURL('https://coloradosprings.myhuub.com/events/')}>
+          <Image style={{ width: 110, height: 110, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/events200.png' }} />
+        </TouchableOpacity>
+      </View>
+      <View style={{ width: '25%', justifyContent:'center',  }}>
+        <TouchableOpacity onPress={() => openURL('https://coloradosprings.myhuub.com/bbapp/screen/courses_all')}>
+          <Image style={{ width: 110, height: 110, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/courses200.png' }} />
+        </TouchableOpacity>
+      </View>
+      <View style={{ width: '25%', justifyContent:'center',  }}>
+        <TouchableOpacity onPress={() => openURL('https://coloradosprings.myhuub.com/coloradospringsadvisors/')}>
+          <Image style={{ width: 110, height: 110, alignSelf: 'center' }} source={{ uri: 'https://coloradosprings.myhuub.com/wp-content/uploads/2021/08/advisor200.png' }} />
+        </TouchableOpacity>
+      </View>
+    </View>
     );
 };
 
